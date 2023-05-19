@@ -1,12 +1,10 @@
 import './App.css'
-import withAnswer from './mocks/answer.json'
-import withoutAnswer from './mocks/no-answer.json'
+import { Movies } from './components/Movies'
+import { useMovie } from './hooks/useMovie'
 
 export default function App () {
-
-  const movies = withAnswer.Search
-  const isAMovie = movies?.length > 0
-
+ const { movies } = useMovie()
+ 
   return (
     <div className='page'>
       <header>
@@ -18,25 +16,9 @@ export default function App () {
       </header>
 
       <main>
-        {
-          isAMovie ? (
-            <ul>
-              {
-                movies.map(movie => (
-                  <li key={movie.imdbID}>
-                    <h1>{movie.Title}</h1>
-                    <p>{movie.Type}</p>
-                    <img src={movie.Poster} alt={movie.Title} />
-                  </li>
-                ))
-              }
-            </ul>
-          ) : (
-            <p>Busqueda fallida de la pelicula</p>
-          )
-        }
+        <Movies movies={movies}/>
       </main>
-      
+
     </div>
   )
 }
