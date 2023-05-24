@@ -21,7 +21,7 @@ function useSearch () {
     }
 
     if(search.length < 3) {
-      setError('La busqueda debe contener mas de 3 caracteres')
+      setError('La busqueda debe contener mas de 3 carcteres')
       return
     }
 
@@ -33,18 +33,17 @@ function useSearch () {
 }
 
 export default function App () {
- const { movies } = useMovie()
- const { search, setSearch, error } = useSearch()
+  const { search, setSearch, error } = useSearch()
+  const { movies, getMovies } = useMovie({ search })
 
  const handleSubmit = (event) => {
   event.preventDefault()
+  getMovies()
  }
 
  const handleChange = (event) => { 
   setSearch(event.target.value)
  }
-
- console.log(search)
  
   return (
     <div className='page'>
