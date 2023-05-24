@@ -7,9 +7,32 @@
 main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 form {
   display: flex;
   place-items: center;
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+
+  width: 90%;
+  list-style: none;
+  text-align: center;
+}
+
+.movie_item h1{
+  font-size: 18px;
+}
+.movie_item p{
+  font-weight: 500;
+  opacity: 0.7;
+}
+.movie_item img{
+  border-radius: 8px;
+  box-shadow: rgba(22, 24, 53, 0.2) 0px 7px 29px 0px;
 }
