@@ -1,15 +1,13 @@
-import withAnswer from '../mocks/answer.json'
-// import withoutAnswer from '../no-answer.json'
+import { useState } from 'react'
+import { searchMovies } from '../services/movies.js'
 
-export function useMovie() {
-  const movies = withAnswer.Search
-  // evitar contrato con la API directamente en la UI
-  const mappedMovies = movies?.map(movie => ({
-    id: movie.imdbID,
-    title: movie.Title,
-    type: movie.Type,
-    poster: movie.Poster
-  }))
+export function useMovie({ search }) {
+  const [movies, setMovies] = useState([])
 
-  return { movies: mappedMovies}
+  const getMovies = async () => {
+    const newMovies = await searchMovies({ search })
+    setMovies(newMovies)
+  }
+
+  return { movies, getMovies}
 }
