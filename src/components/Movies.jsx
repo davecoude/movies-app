@@ -1,9 +1,9 @@
 function ListOfMovies (movies) {
   return (
-    <ul>
+    <ul className="movie">
       {
         movies.map(itemMovie => (
-          <li key={itemMovie.id}>
+          <li className="movie_item" key={itemMovie.id}>
             <h1>{itemMovie.title}</h1>
             <p>{itemMovie.type}</p>
             <img src={itemMovie.poster} alt={itemMovie.title} />
@@ -16,7 +16,7 @@ function ListOfMovies (movies) {
 
 function NoResultsMovies () {
   return (
-    <p>Busqueda fallida de la pelicula</p>
+    <p>No se encontraron resultados para la busqueda</p>
   )
 }
 
