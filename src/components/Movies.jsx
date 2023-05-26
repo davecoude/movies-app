@@ -6,6 +6,7 @@ function ListOfMovies (movies) {
           <li className="movie_item" key={itemMovie.id}>
             <h1>{itemMovie.title}</h1>
             <p>{itemMovie.type}</p>
+            <p>{itemMovie.year}</p>
             <img src={itemMovie.poster} alt={itemMovie.title} />
           </li>
         ))
