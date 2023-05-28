@@ -39,15 +39,17 @@ export default function App () {
 
  const handleSubmit = (event) => {
   event.preventDefault()
-  getMovies()
+  getMovies({search})
  }
 
  const handleSort = () => {
   setSort(!sort)
  }
 
- const handleChange = (event) => { 
-  setSearch(event.target.value)
+ const handleChange = (event) => {
+  const newSearching = event.target.value 
+  setSearch(newSearching)
+  getMovies({ movies: newSearching})
  }
  
   return (
