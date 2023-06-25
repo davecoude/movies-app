@@ -1,50 +1,36 @@
+
+<h1>Busqueda de películas 📽️</h1>
 <img src="./public/banner.gif">
-<br>
-<h1 align="center">Movies App <h1/>
+<p>¿Te gusta el cine? ¿Quieres encontrar la película, serie o anime perfecta para cada ocasión? Con esta aplicación web podrás buscar por género y año. Esta aplicación web es tu guía personalizada para el mundo del séptimo arte. ¡Disfruta del cine como nunca antes!</p>
 
-  <h3 align="center">Buscador de Películas, Series y Anime</h3>
+<h2>🚀 Comenzando </h2>
+<p>Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo.</p>
 
-  <p align="center">
-    Stack de herramientas JavaScript
-    <br />
-    <a href="https://davecoude.github.io/movies-app/"><strong>🔗 Demo </strong></a>
-  </p>
-</div>
+<h2>🗒️ Pre-requisitos</h2>
+<li>Tener instalado <a href="https://nodejs.org/es/download" target="_blank">Node.js</a> en su versión más estable</li>
 
-<!-- ABOUT THE PROJECT -->
-## Sobre el proyecto
+<h2>🔧 Instalación</h2>
+<p>Un paso a paso para obtener el entorno de desarrollo ejecutable</p>
+<ol>
+  <li>Clonar repo: <code>git clone https://github.com/davecoude/movies-app.git</code></li>
+  <li>Instalación de paquetes: <code>npm install</code></li>
+</ol>
+
   
-- Uso de Linter y Vitejs como empaquetador de aplicaciones web
-- Fetching de datos consumiendo una API
-- Control de eventos mediante el uso del DOM
-- Implementación de estados y efectos con hooks optimizados
+<h2>⚡ Comandos Vite</h2>
+<p>Generar compilación y deploy del proyecto</p>
+<ul>
+  <li>Abrir puerto local: <code>npm run dev</code></li>
+  <li>Compilación: <code>npm run build</code></li>
+</ul>
 
-
-<h3>Construido con<h3/>
+<h2>⚒️ Construido con</h2>
 
 [![React][React.js]][React-url]
 
+---
+<p>Con ❤️ davecoude 2023</p>
 
-
-<!-- GETTING STARTED -->
-## Instalación local
-
-Pasos para clonar repositorio e instalar dependencias de desarrollo para uso local
-* git y npm
-  ```sh
-  git clone https://github.com/davecoude/movies-app.git
-  ```
-	```sh
-	 npm install 
-	 ```
-* Visualizar en localhost o preview del deploy
-  ```sh
-  npm run dev
-  ```
-	```sh
-	 npm run preview
-	 ```
-	 
 <!-- MARKDOWN LINKS & IMAGES -->
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
